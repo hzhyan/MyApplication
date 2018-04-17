@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="toast_text">我是APP中的toast文案!!!</string>
+</resources>
