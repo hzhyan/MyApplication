@@ -8,6 +8,7 @@ import android.widget.Toast;
 
 import com.example.hyan.customprogressbar.ActivityCustomProgressBar;
 import com.example.hyan.jni.JniTest;
+import com.example.hyan.opengl.ActivityOpenGL;
 import com.example.hyan.resourceupdate.ActivityResourceUpdate;
 import com.example.hyan.retrofit.ActivityRetrofitTest;
 import com.example.hyan.rxjavatest.ActivityRxJavaTest;
@@ -55,6 +56,7 @@ public class ActivityMain extends Activity implements View.OnClickListener {
                 Toast.makeText(ActivityMain.this, "num = " + num, Toast.LENGTH_LONG).show();
                 break;
             case R.id.btn_test_opengl:
+                ActivityOpenGL.launch(ActivityMain.this);
                 break;
             default:
                 break;
