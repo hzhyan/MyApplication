@@ -38,6 +38,9 @@
         <activity android:name=".opengl.ActivityOpenGL"
             android:screenOrientation="portrait"/>
 
+        <activity android:name=".openglstl.ActivityOpenGLSTL"
+            android:screenOrientation="portrait"/>
+
     </application>
 
 
