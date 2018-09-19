@@ -41,6 +41,9 @@
         <activity android:name=".openglstl.ActivityOpenGLSTL"
             android:screenOrientation="portrait"/>
 
+        <activity android:name=".animation.ActivityAnimation"
+            android:screenOrientation="portrait"/>
+
     </application>
 
 
