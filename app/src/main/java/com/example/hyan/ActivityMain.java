@@ -11,6 +11,7 @@ import com.example.hyan.animation.ActivityAnimation;
 import com.example.hyan.customprogressbar.ActivityCustomProgressBar;
 import com.example.hyan.jni.JniTest;
 import com.example.hyan.opengl.ActivityOpenGL;
+import com.example.hyan.openglshader.ActivityShader;
 import com.example.hyan.openglstl.ActivityOpenGLSTL;
 import com.example.hyan.resourceupdate.ActivityResourceUpdate;
 import com.example.hyan.retrofit.ActivityRetrofitTest;
@@ -36,6 +37,7 @@ public class ActivityMain extends Activity implements View.OnClickListener {
         findViewById(R.id.btn_test_jni).setOnClickListener(this);
         findViewById(R.id.btn_test_opengl).setOnClickListener(this);
         findViewById(R.id.btn_test_opengl_stl).setOnClickListener(this);
+        findViewById(R.id.btn_test_opengl_shader).setOnClickListener(this);
         findViewById(R.id.btn_test_animation).setOnClickListener(this);
     }
 
@@ -67,6 +69,9 @@ public class ActivityMain extends Activity implements View.OnClickListener {
                 break;
             case R.id.btn_test_opengl_stl:
                 ActivityOpenGLSTL.launch(ActivityMain.this);
+                break;
+            case R.id.btn_test_opengl_shader:
+                ActivityShader.launch(ActivityMain.this);
                 break;
             case R.id.btn_test_animation:
                 ActivityAnimation.launch(ActivityMain.this);

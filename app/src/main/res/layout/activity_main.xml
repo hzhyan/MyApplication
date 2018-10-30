@@ -1,54 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <Button
         android:id="@+id/btn_test_resource_change"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="测试资源热更新"/>
+        android:text="测试资源热更新" />
 
     <Button
         android:id="@+id/btn_test_rx_java"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="测试RxJava"/>
+        android:text="测试RxJava" />
 
     <Button
         android:id="@+id/btn_test_custom_progress_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="测试自定义进度条"/>
+        android:text="测试自定义进度条" />
 
     <Button
         android:id="@+id/btn_test_retrofit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="测试Retrofit"/>
+        android:text="测试Retrofit" />
 
     <Button
         android:id="@+id/btn_test_jni"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="测试JNI"/>
+        android:text="测试JNI" />
 
     <Button
         android:id="@+id/btn_test_opengl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="测试OpenGL"/>
+        android:text="测试OpenGL" />
 
     <Button
         android:id="@+id/btn_test_opengl_stl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="测试OpenGL STL"/>
+        android:text="测试OpenGL STL" />
+
+    <Button
+        android:id="@+id/btn_test_opengl_shader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试OpenGL Shader" />
 
     <Button
         android:id="@+id/btn_test_animation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="测试动画"/>
+        android:text="测试动画" />
 
 </LinearLayout>
