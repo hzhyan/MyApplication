@@ -3,7 +3,7 @@ package com.example.hyan;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.view.GestureDetector;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -17,8 +17,6 @@ import com.example.hyan.resourceupdate.ActivityResourceUpdate;
 import com.example.hyan.retrofit.ActivityRetrofitTest;
 import com.example.hyan.rxjavatest.ActivityRxJavaTest;
 
-import java.util.ArrayList;
-
 
 /**
  * Created by huangyan on 2018/1/26.
@@ -26,8 +24,11 @@ import java.util.ArrayList;
 
 public class ActivityMain extends Activity implements View.OnClickListener {
 
+    private static final String TAG = "ActivityMain";
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
+        Log.d(TAG, "onCreate");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         findViewById(R.id.btn_test_resource_change).setOnClickListener(this);
@@ -39,6 +40,48 @@ public class ActivityMain extends Activity implements View.OnClickListener {
         findViewById(R.id.btn_test_opengl_stl).setOnClickListener(this);
         findViewById(R.id.btn_test_opengl_shader).setOnClickListener(this);
         findViewById(R.id.btn_test_animation).setOnClickListener(this);
+    }
+
+    @Override
+    protected void onStart() {
+        Log.d(TAG, "onStart");
+        super.onStart();
+    }
+
+    @Override
+    protected void onResume() {
+        Log.d(TAG, "onResume");
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        Log.d(TAG, "onPause");
+        super.onPause();
+    }
+
+    @Override
+    protected void onStop() {
+        Log.d(TAG, "onStop");
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        Log.d(TAG, "onDestroy");
+        super.onDestroy();
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        Log.d(TAG, "onSaveInstanceState");
+        super.onSaveInstanceState(outState);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        Log.d(TAG, "onRestoreInstanceState");
+        super.onRestoreInstanceState(savedInstanceState);
     }
 
     @Override
